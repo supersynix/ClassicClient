@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "classicclient",
+  "version": "${version}",
+  "name": "Classic Client",
+  "description": "Freelook, a clean HUD, a heart indicator for the player you target, and a simple settings screen.",
+  "authors": ["Ariz"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.classicclient.ClassicClient"]
+  },
+  "mixins": [
+    {
+      "config": "classicclient.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
